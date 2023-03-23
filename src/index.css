@@ -7,7 +7,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.boxshadow{
+
+  box-shadow: 8px 8px 12px #404040;
+  border-radius: 15px;
+  overflow:hidden;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.boxshadow>img{
+filter:brightness(2px)
+}
+
+.boxshadow:hover > img{
+  transform:scale(1.1);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+
+}
+
+.boxshadow:hover{
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 5px #353535;
+}
+
